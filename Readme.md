@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Линара Вахитова](https://up.htmlacademy.ru/htmlcss/30/user/1389265).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Петрищак](https://htmlacademy.ru/profile/maksim_petrishchak).
 
 ---
 
