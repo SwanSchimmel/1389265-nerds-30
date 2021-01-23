@@ -2,20 +2,24 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nerds</title>
 </head>
 <body>
     <header>
         <nav>
-            <a><img src="img/index-logo.svg" width="160" height="65" alt="Логотип Nerds"></a>
+            <a href="index.html"><img src="img/index-logo.svg" width="160" height="65" alt="Логотип Nerds"></a>
            <ul>
                <li><a href="blank.html">Студия</a></li>
                <li><a href="blank.html">Клиенты</a></li>
-               <li><a href="shop.html">Магазин</a></li>
+               <li><a>Магазин</a></li>
                <li><a href="blank.html">Контакты</a></li>
            </ul>
-           <a href="blank.html">Корзина</a>
+           <ul>
+               <li>
+                    <a href="blank.html">Корзина</a>
+               </li>
+           </ul>
+           
         </nav>
     </header>
     
@@ -101,6 +105,8 @@
         </section>
         <section>
             <h2>Фильтр каталога</h2>
+            <form method="GET" action="https://echo.htmlacademy.ru">
+            
             <fieldset>
                 <legend>Сортировать:</legend>
                 <ul>
@@ -119,12 +125,14 @@
                     </li>
                 </ul>
             </fieldset>
+            
             <fieldset>
                 <ul>
                     <li><input type="radio" name="button" value="down" checked></li>
                     <li><input type="radio" name="button" value="up"></li>
                 </ul>
             </fieldset>
+            </form>
         </section>
         <section>
             <h2>Шаблоны</h2>
@@ -171,7 +179,7 @@
         </section>
         <section>
             <h2>Скидка</h2>
-            <p>Давайте дружить, это выгодно!</p>
+            <p><b>Давайте дружить, это выгодно!</b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
     </footer>
