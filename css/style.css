@@ -18,6 +18,8 @@
   --special-white: #DFDFDF;
   --special-white-dark: #D5D5D5;
   --special-white-light: #DBDBDB;
+  --special-hover: rgba(0, 1, 1, 0.3);
+  --special-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 }
 
@@ -57,7 +59,14 @@ img {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 
 /* grid */
@@ -76,18 +85,14 @@ img {
 
 .main-navigation {
   display: grid;
+  grid-template-columns: 170px 1fr min-content;
+  width: 1157px;
+  column-gap: 10px;
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-black);
   background-color: var(--basic-grey);
   text-transform: uppercase;
-}
-
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 170px 1fr min-content;
-  width: 1157px;
-  margin: 0 auto;
 }
 
 .site-navigation,
@@ -104,8 +109,9 @@ img {
 /* Container */
 
 .container {
-  width: 1157px;
+  width: 1160px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 
@@ -129,7 +135,6 @@ img {
 
 .color-wrapper {
   background-color:var(--basic-grey);
-  margin-top: -21px;
 }
 
 .slider {
@@ -175,14 +180,15 @@ img {
 
 .slider-button:active {
   background-color: var(--special-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
 }
 
 /* services */
 
 .services-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -211,7 +217,7 @@ img {
 
 .services-button-red:active {
   background-color: var(--special-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
 }
 
 .services-button-green {
@@ -227,7 +233,7 @@ img {
 
 .services-button-green:active {
   background-color: var(--special-green-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
 }
 
 .services-button-yellow {
@@ -243,7 +249,7 @@ img {
 
 .services-button-yellow:active {
   background-color: var(--special-yellow-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
 }
 
 /* about */
@@ -301,7 +307,8 @@ img {
 
 .partners-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 95px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -351,8 +358,8 @@ img {
 
 .contact-form-submit:active {
   background: var(--special-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 1, 1, 0.3);
+  box-shadow: var(--special-box-shadow);
+  color: var(--special-hover);
 }
 
 /* catalog */
@@ -440,19 +447,23 @@ img {
 
 .form-submit-button:active {
   background: var(--special-white-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
   border: none;
   mix-blend-mode: normal;
-  color: rgba(0, 1, 1, 0.3);
+  color: var(--special-hover);
 }
 
 /* фильтр каталога */
 
 .filter-sort ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter-buttons-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -478,6 +489,9 @@ img {
 /* шаблоны */
 
 .templates-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -496,7 +510,7 @@ img {
 
 .templates-button:active {
   background-color: var(--special-red-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: var(--special-box-shadow);
 }
 
 /* пагинация */
@@ -539,8 +553,8 @@ img {
 .pagination-button:active,
 .next-pagination-button:active {
   background-color: var(--special-white-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 1, 1, 0.3);
+  box-shadow: var(--special-box-shadow);
+  color: var(--special-hover);
 }
 
 .current-pagination-button {
