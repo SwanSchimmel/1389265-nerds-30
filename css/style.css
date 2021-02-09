@@ -55,7 +55,7 @@ a {
 
 img {
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .visually-hidden {
@@ -79,6 +79,7 @@ img {
 
 .main-header {
   background-color: var(--basic-grey);
+  padding-top: 50px;
 }
 
 /* Main navigation */
@@ -100,6 +101,19 @@ img {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  align-items: center;
+  margin-left: 202px;
+}
+
+.user-navigation {
+  display: flex;
+  align-items: center;
 }
 
 .site-navigation-current a:not([href]) {
@@ -145,13 +159,23 @@ img {
   margin-bottom: 80px;
 }
 
+.slider-item {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  min-height: 431px;
+}
+
 .slider-title {
   font-size: 55px;
   line-height: 55px;
+  margin: 0;
+  padding-top: 78px;
 }
 
 .slider-text {
   color: var(--basic-semi-black);
+  margin-top: 25px;
+  margin-bottom: 38px;
 }
 
 .button {
@@ -162,7 +186,9 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--special-red);
   cursor: pointer;
 }
@@ -324,6 +350,7 @@ img {
 .footer-column {
   display: grid;
   grid-template-columns: 400px 1fr;
+  min-height: 218px;
 }
 
 .footer-text-1 {
@@ -341,6 +368,13 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  min-height: 218px;
+}
+
+.social-item {
+  margin-right: 9px;
 }
 
 /* popup */
@@ -370,7 +404,9 @@ img {
   line-height: 55px;
   text-align: center;
   background-color: var(--basic-grey);
-  margin-top: 0px;
+  margin: 0;
+  padding-top: 78px;
+  padding-bottom: 108px;
 }
 
 .catalog-column {
@@ -382,6 +418,12 @@ img {
 .filter-catalog-form {
   display: grid;
   grid-template-columns: 1fr 42px;
+}
+
+.general-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 /* Template filter */
@@ -455,6 +497,15 @@ img {
 
 /* фильтр каталога */
 
+.sort-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sort-item {
+  margin-right: 25px;
+}
+
 .filter-sort ul {
   list-style: none;
   margin: 0;
@@ -484,6 +535,16 @@ img {
 .filter-buttons-item:active,
 .filter-buttons-item:checked {
   opacity: 1;
+}
+
+.filter-buttons-list {
+  display: flex;
+  align-items: center;
+  height: 86px;
+}
+
+.filter-buttons-item {
+  margin-right: 18px;
 }
 
 /* шаблоны */
@@ -517,6 +578,11 @@ img {
 
 .pagination-list {
   list-style: none;
+  display: flex;
+}
+
+.pagination-item {
+  margin-right: 11px;
 }
 
 .pagination-button {
@@ -524,9 +590,10 @@ img {
   border-radius: 3px;
   width: 50px;
   height: 50px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--basic-black);
-  text-align: center;
   line-height: 18px;
 
 }
@@ -534,11 +601,12 @@ img {
 .next-pagination-button {
   background-color: var(--basic-grey);
   border-radius: 3px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--basic-black);
   width: 260px;
   height: 50px;
-  text-align: center;
   line-height: 18px;
 
 }
@@ -564,6 +632,7 @@ img {
   border-radius: 3px;
   width: 50px;
   height: 50px;
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

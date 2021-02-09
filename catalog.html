@@ -43,7 +43,7 @@
           <section class="filter-template">
               <h2 class="visually-hidden">Фильтр шаблонов</h2>
               <form class="filter-form" method="GET" action="https://echo.htmlacademy.ru">
-              <fieldset class="form-fieldset">
+              <fieldset class="general-fieldset form-fieldset">
                   <legend class="legend-title">Стоимость:</legend>
                   <div class="range-filter">
                       <div class="range-controls">
@@ -71,7 +71,7 @@
                     </div>
               </fieldset>
 
-              <fieldset class="filter-grid">
+              <fieldset class="general-fieldset filter-grid">
                   <legend class="legend-title">Сетка:</legend>
                   <ul class="form-fields-list">
                       <li class="form-fields-item">
@@ -89,7 +89,7 @@
                   </ul>
               </fieldset>
 
-              <fieldset class="filter-features">
+              <fieldset class="general-fieldset filter-features">
                   <legend class="legend-title">Особенности:</legend>
                   <ul class="form-fields-list">
                       <li class="form-fields-item">
@@ -123,26 +123,26 @@
                 <h2 class="visually-hidden">Фильтр каталога</h2>
                 <form class="filter-catalog-form" method="GET" action="https://echo.htmlacademy.ru">
 
-                <fieldset class="filter-sort">
+                <fieldset class="general-fieldset filter-sort">
                     <legend class="legend-title">Сортировать:</legend>
-                    <ul>
-                        <li>
+                    <ul class="sort-list">
+                        <li class="sort-item">
                             <input class="form-radio-field" type="radio" name="sorting" value="price" id="filter-price" checked>
                             <label class="filter-description" for="filter-price">По цене</label>
                         </li>
-                        <li>
+                        <li class="sort-item">
                             <input class="form-radio-field" type="radio" name="sorting" value="type" id="filter-type">
                             <label class="filter-description" for="filter-type">По типу</label>
                         </li>
 
-                        <li>
+                        <li class="sort-item">
                             <input class="form-radio-field" type="radio" name="sorting" value="name" id="filter-name">
                             <label class="filter-description" for="filter-name">По названию</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset class="filter-buttons">
+                <fieldset class="general-fieldset filter-buttons">
                     <ul class="filter-buttons-list">
                         <li class="filter-buttons-item"><input class="filter-button filter-button-down" type="radio" name="button" value="down" checked></li>
                         <li class="filter-buttons-item"><input class="filter-button filter-button-up" type="radio" name="button" value="up"></li>
