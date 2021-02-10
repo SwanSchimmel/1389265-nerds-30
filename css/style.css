@@ -55,7 +55,7 @@ a {
 
 img {
   max-width: 100%;
-  /* height: auto; */
+  height: auto;
 }
 
 .visually-hidden {
@@ -105,10 +105,16 @@ img {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 440px;
   align-items: center;
   margin-left: 202px;
+}
+
+.navigation-item {
+  margin-right: 45px;
+}
+
+.navigation-item:last-child {
+  margin-right: 0;
 }
 
 .user-navigation {
@@ -123,7 +129,7 @@ img {
 /* Container */
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -185,6 +191,10 @@ img {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  padding: 10px;
+  min-height: 50px;
+  min-width: 240px;
+  max-width: 288px;
   color: var(--basic-white);
   display: flex;
   justify-content: center;
@@ -232,8 +242,8 @@ img {
 }
 
 .services-button-red {
-  width: 160px;
-  height: 50px;
+  min-width: 160px;
+  max-width: 192px;
 }
 
 .services-button-red:hover,
@@ -247,8 +257,8 @@ img {
 }
 
 .services-button-green {
-  width: 160px;
-  height: 50px;
+  min-width: 160px;
+  max-width: 192px;
   background-color: var(--special-green);
 }
 
@@ -263,8 +273,8 @@ img {
 }
 
 .services-button-yellow {
-  width: 160px;
-  height: 50px;
+  min-width: 160px;
+  max-width: 192px;
   background-color: var(--special-yellow);
 }
 
@@ -380,8 +390,8 @@ img {
 /* popup */
 
 .contact-form-submit {
-  width: 259px;
-  height: 50px;
+  min-width: 259px;
+  max-width: 352px;
   border-radius: 3px;
   border: none;
 }
@@ -473,8 +483,10 @@ img {
 .form-submit-button {
   background: var(--basic-grey);
   border-radius: 3px;
-  width: 260px;
+  min-width: 260px;
+  max-width: 312px;
   height: 50px;
+  padding: 10px;
   border: none;
   font-size: 16px;
   line-height: 18px;
@@ -560,8 +572,8 @@ img {
 
 .templates-button {
   border-radius: 3px;
-  width: 200px;
-  height: 50px;
+  min-width: 200px;
+  max-width: 240px;
   border: none;
 }
 
