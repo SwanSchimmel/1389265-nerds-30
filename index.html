@@ -74,9 +74,9 @@
             </li>
           </ul>
           <div class="slider-dotts">
-            <button type="button" class="dotts active-dot" aria-label="Первый слайд"></button>
-            <button type="button" class="dotts" aria-label="Второй слайд"></button>
-            <button type="button" class="dotts" aria-label="Третий слайд"></button>
+            <button type="button" class="slider-dot active-dot" aria-label="Первый слайд"></button>
+            <button type="button" class="slider-dot" aria-label="Второй слайд"></button>
+            <button type="button" class="slider-dot" aria-label="Третий слайд"></button>
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@
           <div class="container lines">
             <h2 class="visually-hidden">Партнёры</h2>
             <ul class="partners-list">
-                <li class="partners-item"><a href="#"><img src="img/html-1.svg" width="199" height="68" alt="html academy"></a></li>
+                <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-1.svg" width="199" height="68" alt="html academy"></a></li>
                 <li class="partners-item"><a href="#"><img src="img/borodinski-1.svg" width="209" height="90" alt="Барбершоп Бородинский"></a></li>
                 <li class="partners-item"><a href="#"><img src="img/pink-1.svg" width="185" height="52" alt="Pink"></a></li>
                 <li class="partners-item"><a href="#"><img src="img/mishka-1.svg" width="173" height="84" alt="Мишка"></a></li>
@@ -169,7 +169,7 @@
         <footer class="main-footer">
             <div class="footer-part-1">
             <div class="footer-map">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1423d2d4977e4213ad9f09d3d4d8d7dec992b442f8d3ee2a544ca6326782174&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+              <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1423d2d4977e4213ad9f09d3d4d8d7dec992b442f8d3ee2a544ca6326782174&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
               <div class="container">
                 <div class="map-contacts">
                   <b>NЁRDS DESIGN STUDIO</b>
@@ -224,6 +224,8 @@
     <section class="modal">
         <h2>Напишите нам</h2>
         <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+
+          <div class="modal-line">
             <p>
               <label for="contact-form-name">Ваше имя:</label><br>
               <input class="contact-form-field" type="text" name="name" id="contact-form-name" placeholder="Имя Фамилия">
@@ -233,17 +235,17 @@
               <label for="contact-form-email">Ваш email:</label><br>
               <input class="contact-form-field" type="email" name="email" id="contact-form-email" placeholder="email@example.com">
             </p>
-
+          </div>
             <p>
               <label for="contact-form-text">Текст письма:</label><br>
-              <textarea class="contact-form-textarea" name="text" cols="30" rows="10" id="contact-form-text" placeholder="В свободной форме"></textarea>
+              <textarea class="contact-form-textarea" name="text" id="contact-form-text" placeholder="В свободной форме"></textarea>
             </p>
 
             <p>
               <button class="button contact-form-submit" type="submit">Отправить</button>
             </p>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 </body>
 </html>

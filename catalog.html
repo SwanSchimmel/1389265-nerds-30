@@ -128,7 +128,7 @@
                     <ul class="sort-list">
                         <li class="sort-item" >
                             <input class="visually-hidden form-radio-field" type="radio" name="sorting" value="price" id="filter-price" checked>
-                            <label class="filter-description"  for="filter-price">По цене</label>
+                            <label class="filter-description active"  for="filter-price">По цене</label>
                         </li>
                         <li class="sort-item">
                             <input class="visually-hidden form-radio-field" type="radio" name="sorting" value="type" id="filter-type">
@@ -223,7 +223,7 @@
     <footer class="main-footer">
       <div class="footer-part-1">
       <div class="footer-map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1423d2d4977e4213ad9f09d3d4d8d7dec992b442f8d3ee2a544ca6326782174&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1423d2d4977e4213ad9f09d3d4d8d7dec992b442f8d3ee2a544ca6326782174&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
         <div class="container">
           <div class="map-contacts">
             <b>NЁRDS DESIGN STUDIO</b>
@@ -275,9 +275,11 @@
     </div>
     </div>
   </footer>
-<section class="modal">
+  <section class="modal">
     <h2>Напишите нам</h2>
     <form class="contact-form" action="https://echo.htmlacademy.ru" method="POST">
+
+      <div class="modal-line">
         <p>
           <label for="contact-form-name">Ваше имя:</label><br>
           <input class="contact-form-field" type="text" name="name" id="contact-form-name" placeholder="Имя Фамилия">
@@ -287,17 +289,17 @@
           <label for="contact-form-email">Ваш email:</label><br>
           <input class="contact-form-field" type="email" name="email" id="contact-form-email" placeholder="email@example.com">
         </p>
-
+      </div>
         <p>
           <label for="contact-form-text">Текст письма:</label><br>
-          <textarea class="contact-form-textarea" name="text" cols="30" rows="10" id="contact-form-text" placeholder="В свободной форме"></textarea>
+          <textarea class="contact-form-textarea" name="text" id="contact-form-text" placeholder="В свободной форме"></textarea>
         </p>
 
         <p>
           <button class="button contact-form-submit" type="submit">Отправить</button>
         </p>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
 </body>
 </html>
