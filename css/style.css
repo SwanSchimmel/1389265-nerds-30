@@ -326,13 +326,9 @@ img {
   margin-top: -6px;
 }
 
-.services-line::after {
-  content: '';
-  position: absolute;
-  height: 2px;
-  background-color: var(--basic-grey);
-  top: 428px;
-  left: 139px;
+.services-line {
+  border-top: 2px solid var(--basic-grey);
+  padding-top: 38px;
 }
 
 .services-list {
@@ -410,7 +406,7 @@ img {
 /* about */
 
 .about-block {
-  padding-top: 121px;
+  padding-top: 80px;
 }
 
 .about-tagline {
