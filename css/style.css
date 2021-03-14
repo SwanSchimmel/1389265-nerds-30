@@ -260,6 +260,7 @@ img {
   color: var(--basic-semi-black);
   margin-top: 26px;
   margin-bottom: 39px;
+  max-width: 400px;
 }
 
 .button {
@@ -572,6 +573,11 @@ img {
 
 /* map */
 
+.footer-part-1 {
+  background: var(--basic-grey) url("../img/map.jpg") no-repeat 50%;
+  background-size: cover;
+}
+
 .footer-map ymaps {
   position: absolute;
 }
@@ -604,6 +610,11 @@ img {
   line-height: 18px;
   color: var(--special-dark-grey);
   padding-top: 9px;
+}
+
+.map-tel {
+  text-decoration: none;
+  color: inherit;
 }
 
 .map-button {
@@ -709,8 +720,8 @@ img {
 .modal {
   display: none;
   position: fixed;
-  top: 152px;
-  bottom: auto;
+  top: 18px;
+  bottom: 50px;
   right: 0;
   left: 0;
   margin: auto;
@@ -796,6 +807,7 @@ img {
   max-width: 352px;
   border-radius: 3px;
   border: none;
+  margin-top: 8px;
 }
 
 .contact-form-submit:hover {
