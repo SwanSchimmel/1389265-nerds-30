@@ -236,7 +236,7 @@ img {
 
 .slider-item {
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 400px 1fr;
   min-height: 431px;
 }
 
@@ -1087,6 +1087,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-right: 25px;
 }
 
 .form-fields-list {
@@ -1162,18 +1163,23 @@ img {
 
 /* фильтр каталога */
 
-
+.filter-sort {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
 .sort-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin-top: 0;
 }
 
 .sort-item {
   margin-right: 25px;
   text-transform: uppercase;
-  margin-top: -26px;
+  margin-top: 0px;
 }
 
 .filter-sort ul {
