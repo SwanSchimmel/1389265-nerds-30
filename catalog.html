@@ -123,40 +123,40 @@
         <div class="templates-column">
           <section class="filter-catalog">
             <h2 class="visually-hidden">Фильтр каталога</h2>
-            <form class="filter-catalog-form" method="GET" action="https://echo.htmlacademy.ru">
+            <div class="filter-catalog">
 
-              <fieldset class="general-fieldset filter-sort">
-                <legend class="legend-title">Сортировать:</legend>
+              <div class="general-fieldset filter-sort">
+                <p class="filter-title">Сортировать:</p>
                 <ul class="sort-list">
                   <li class="sort-item">
-                    <input class="visually-hidden form-radio-field" type="radio" name="sorting" value="price" id="filter-price" checked>
-                    <label class="active filter-description sort-margin" for="filter-price" tabindex=0>По цене</label>
+
+                    <a class="active sort-link sort-margin" tabindex=0>По цене</a>
                   </li>
                   <li class="sort-item">
-                    <input class="visually-hidden  form-radio-field" type="radio" name="sorting" value="type" id="filter-type">
-                    <label class="filter-description sort-margin" for="filter-type" tabindex=0>По типу</label>
+
+                    <a class="sort-link sort-margin" tabindex=0>По типу</a>
                   </li>
 
                   <li class="sort-item">
-                    <input class="visually-hidden form-radio-field" type="radio" name="sorting" value="name" id="filter-name">
-                    <label class="filter-description sort-margin" for="filter-name" tabindex=0>По названию</label>
+
+                    <a class="sort-link sort-margin" tabindex=0>По названию</a>
                   </li>
                 </ul>
-              </fieldset>
+              </div>
 
-              <fieldset class="general-fieldset filter-buttons">
+              <div class="general-fieldset filter-buttons">
                 <ul class="filter-buttons-list">
                   <li class="filter-buttons-item">
-                    <input class="visually-hidden filter-button filter-button-down" id="down" type="radio" name="button" value="down" checked>
-                    <label class="filter-description" for="down" aria-label="вниз" tabindex=0></label>
+
+                    <a class="active filter-button filter-button-down" aria-label="вниз" tabindex=0></a>
                   </li>
                   <li class="filter-buttons-item">
-                    <input class="visually-hidden filter-button filter-button-up" id="up" type="radio" name="button" value="up">
-                    <label class="filter-description" for="up" aria-label="вверх" tabindex=0></label>
+
+                    <a class="filter-button filter-button-up" aria-label="вверх" tabindex=0></a>
                   </li>
                 </ul>
-              </fieldset>
-            </form>
+              </div>
+            </div>
           </section>
           <section class="filter-templates">
             <h2 class="visually-hidden">Шаблоны</h2>
@@ -194,7 +194,7 @@
                 </div>
               </li>
               <li class="template-item">
-                <a href="#"><img src="img/a+.jpg" width="358" height="578" alt="А+"></a>
+                <a href="#"><img src="img/aplus.jpg" width="358" height="578" alt="А+"></a>
                 <div class="templates-buy">
                   <a href="#" class="templates-header">A Plus</a>
                   <p class="templates-paragraph">Лендинг курсов повышения<br> квалификации</p>
@@ -225,7 +225,7 @@
   <footer class="main-footer catalog-footer">
     <div class="footer-part-1">
       <div class="footer-map">
-        <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad1423d2d4977e4213ad9f09d3d4d8d7dec992b442f8d3ee2a544ca6326782174&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+        <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15988.034763282607!2d30.307013927782073!3d59.940366440102075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630fb42a0f45f:0x6c20e1651316b8c2!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGW0Y8sIDE5MTE4Ng!5e0!3m2!1suk!2sua!4v1615801707783!5m2!1suk!2sua" width="1920" height="416" allowfullscreen="" loading="lazy"></iframe>
         <div class="container">
           <div class="map-contacts">
             <b>NЁRDS DESIGN STUDIO</b>

@@ -9,50 +9,50 @@ let isStoreageSupport = true;
 let storage = "";
 
 try {
-    storage = localStorage.getItem("name");
+  storage = localStorage.getItem("name");
 } catch (err) {
-    isStoreageSupport = false;
+  isStoreageSupport = false;
 }
 
 modalLink.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modalPopup.classList.add("modal-show");
+  evt.preventDefault();
+  modalPopup.classList.add("modal-show");
 
-    if (storage) {
-        modalName.value = storage;
-        modalEmail.focus();
-    } else {
-        modalName.focus();
-    }
-
+  if (storage) {
+    modalName.value = storage;
+    modalEmail.focus();
+  } else {
     modalName.focus();
+  }
+
+  modalName.focus();
 });
 
 modalClose.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    modalPopup.classList.remove("modal-show");
-    modalPopup.classList.remove("modal-error");
+  evt.preventDefault();
+  modalPopup.classList.remove("modal-show");
+  modalPopup.classList.remove("modal-error");
 });
 
 modalForm.addEventListener("submit", function(evt) {
-    if (!modalName.value || !modalEmail.value) {
-        evt.preventDefault();
-        modalPopup.classList.remove("modal-error");
-        modalPopup.offsetWidth = modalPopup.offsetWidth;
-        modalPopup.classList.add("modal-error");
+  if (!modalName.value || !modalEmail.value) {
+    evt.preventDefault();
+    modalPopup.classList.remove("modal-error");
+    modalPopup.offsetWidth = modalPopup.offsetWidth;
+    modalPopup.classList.add("modal-error");
 
-    } else {
-        if (isStoreageSupport) {
-            localStorage.setItem("name", modalName.value);
-        }
+  } else {
+    if (isStoreageSupport) {
+      localStorage.setItem("name", modalName.value);
     }
+  }
 });
 
 window.addEventListener("keydown", function(evt) {
-    if (evt.keyCode === 27) {
-        if (modalPopup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            modalPopup.classList.remove("modal-show");
-        }
+  if (evt.keyCode === 27) {
+    if (modalPopup.classList.contains("modal-show")) {
+      evt.preventDefault();
+      modalPopup.classList.remove("modal-show");
     }
+  }
 })
